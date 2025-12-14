@@ -1,24 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Arturo's Christmas List 🎄</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; }
-    h1 { color: darkred; }
-    ul { list-style-type: none; padding: 0; }
-    li { margin: 10px 0; }
-    a { text-decoration: none; color: green; font-weight: bold; }
-    a:hover { color: red; }
+    body {
+      font-family: 'Trebuchet MS', sans-serif;
+      background: url('https://images.unsplash.com/photo-1607082349566-187e8c0a6f3a') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3em;
+      color: #ffdf00;
+      text-shadow: 2px 2px 5px #000;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 30px auto;
+      max-width: 600px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+    }
+    li {
+      margin: 15px 0;
+      font-size: 1.5em;
+    }
+    a {
+      text-decoration: none;
+      color: #00ff99;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #ff4444;
+    }
+
+    /* Snowfall effect */
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      color: white;
+      font-size: 1.5em;
+      animation: fall linear infinite;
+    }
+    @keyframes fall {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(100vh); }
+    }
   </style>
 </head>
 <body>
-  <h1>🎁 Arturo's Christmas List 🎁</h1>
-  <p>Click the links below to see the items I’d love this year:</p>
+  <header>
+    <h1>🎅 Arturo's Christmas Wish List 🎁</h1>
+    <p>Click below to see what I’d love this year!</p>
+  </header>
+
   <ul>
-    <li><a href="https://www.amazon.com/example">Cozy Blanket</a></li>
-    <li><a href="https://www.target.com/example">Board Game</a></li>
-    <li><a href="https://www.bestbuy.com/example">Wireless Headphones</a></li>
+    <li> <a href="https://brucebolt.us/collections/bear-series-batting-gloves/products/premium-pro-creator-series-long-cuff-batting-gloves-sunrise">batting gloves</a></li>
+    <li> <a href="https://www.lego.com/en-us/product/optimus-prime-10302">optimus prime lego set</a></li>
+    <li> <a href="https://www.amazon.com/Ljusmicker-Protective-Generation-Accessories-Keychain-Black/dp/B0CMTLM78L/ref=sr_1_3?adgrpid=1333708169728867&dib=eyJ2IjoiMSJ9.7UeJmFlVTNk-2Mpn1crAchwB8TBrJGwMvM86_sP_jzhA7SDGkrgbVgkPC-Z3Zxhu61ck4j6-VSrZK1wCTd1V-6AnGsKu5k_RXDLffxFz-8p_rS1bUEVWsq2aC-VgEfySWcOtd0Qgu0I70YsRWC0qufdNWTRNPcqtaTu8hPrI42RviNVPrbagpEiVM3FQ5evHMoDmGGqG5-w1PV2DO7U_2jqbYXfX1s-oK72m5vjnPX0.D2Cu_LRpqnQcpPe_Pyxa26Qetmx3bUJScqgdkrc53Nk&dib_tag=se&hvadid=83356975383950&hvbmt=be&hvdev=c&hvlocphy=79987&hvnetw=o&hvqmt=e&hvtargid=kwd-83357107948467%3Aloc-190&hydadcr=17953_13444526&keywords=airpod%2Bpro%2B2%2Bcase&mcid=2ae6504e52d834e6aafe62c32344bf18&qid=1765688294&sr=8-3&th=1">Wireless Headphones case</a></li>
+    <li> <a href="https://www.kohls.com/product/prd-7752064/sephora-favorites-holiday-cologne-sampler-set-with-redeemable-voucher.jsp">Colonge Bottle</a></li>
+<li> <a href="https://www.apple.com/shop/product/mw2r3am/a/usb-c-to-lightning-cable-2-m?afid=p240%7Cbi~cmp-698199638~adg-1254544094737131~ad-78409138374283_kwd-78409378802237%3Aloc-190~dev-c~ext-~prd-~nt-search~crid-&cid=aos-us-kwbi-btb-iphone-account-launch-&fnode=e32757a6dc6a860cb662da440be4a50607c1f90803f5007c50c9adfc667e931d53bf450866af558f639eedd9b4aa6b0d3c9e15c2664d37cdb7e91a64c0c4ee918c5a4f1937424d55b01a93abeec99b9dd2b43a59b355a7668afe8a26cc0d6c18c2a3b85d514632021d0269d58cd08942ae0174c69bf55c6fb02fd313aed1dcdc">charger</a></li>
   </ul>
+
+  <!-- Snowflakes -->
+  <div class="snowflake" style="left:10%; animation-duration:8s;">❄️</div>
+  <div class="snowflake" style="left:30%; animation-duration:10s;">❄️</div>
+  <div class="snowflake" style="left:50%; animation-duration:12s;">❄️</div>
+  <div class="snowflake" style="left:70%; animation-duration:9s;">❄️</div>
+  <div class="snowflake" style="left:90%; animation-duration:11s;">❄️</div>
 </body>
 </html>
